@@ -3,7 +3,7 @@
 ## What is **Active Learning**?
 
 <p align="center" >
-  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOTx7S6Y-OrLb1bV8KBJpLqPVsG7pRV5s9EW8_6cX6Wipn6k1fbNzOtYNJSu-YfztetB8D0i26__t4o_dtwgvJAG9Qfr4g=w1920-h961" width="400">
+  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOTx7S6Y-OrLb1bV8KBJpLqPVsG7pRV5s9EW8_6cX6Wipn6k1fbNzOtYNJSu-YfztetB8D0i26__t4o_dtwgvJAG9Qfr4g=w1920-h961" width="600">
   
 </p>
 
