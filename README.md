@@ -19,7 +19,7 @@ The steps to use active learning on an unlabelled dataset are:
 1. Manually annotate a subsample of the data;
 2. Train the model on this labelled data;
 3. Use the trained model to make predictions on unlabelled data;
-4. Select the most informative unlabeled data points according to the consen query strategy.
+4. Select the most informative unlabeled data points according to the chosen query strategy.
 
 ## Active Learning Loop:
 <p align="center" >
