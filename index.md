@@ -15,37 +15,20 @@ It solves this problem by selecting unlabeled data points that are considered in
 ## Active Learning Process:
 
 <p align="center" >
-  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEORNch-F36ROGEBY6eFr1LhxK96tJqtFRvZUwpZ-iEdIeDBrjSp4n5CV3o5kGeDFKwILgxleVo9PpbTuBB_2SSO7LF3liw=w1920-h961" width="400">
+  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOTORRU-hzZE9SY3MFFEVGa-Rwv03TZVtxViDQhSFXtr9n_zZGXL4aphWkygOHPx6wizEk68SnOCUlfnQEu2SODrkM9D=w1671-h942" width="600">
   <br>
   (Fig 1. Steps of active learning)
 </p>
 
-The steps to use active learning on an unlabelled dataset are: 
-1. **Annotating**: Manually annotate a subsample of the data;
-2. **Training**: Train the model on this labelled data;
-3. **Predicting**: Use the trained model to make predictions on unlabelled data;
-4. **Querying**: Select the most informative unlabeled data points according to the chosen query strategy.
+The steps to use active learning on an unlabeled dataset consist of:
 
-## Active Learning Loop:
-<p align="center" >
-  <img src="https://lh3.googleusercontent.com/u/2/drive-viewer/AAOQEOROg4eT3g41F_OpaqlGOwNilXvHEj4DcQoSG8WBnCgbuM4LKk8KEWqRRWf4GviP1ARS4D1u9igaeLhXnQqBeH-pUvsvRQ=w1920-h961" width="600">
-  <br>
-  (Fig 2. Evolution of The Dataset at each Iteration)
-</p>
-
-The active learning loop consists of the following steps:
-
-1. **Training a predictor**: A prediction model is initially trained on a small subset of labeled data.
-
-2. **Selecting unlabeled data points**: The predictor is used to score and rank the remaining unlabeled data points based on their informativeness.
-
-3. **Querying for labels**: The most informative data points are selected for labeling by an expert. These data points are chosen based on a query strategy that maximizes the expected reduction in prediction error.
-
-3. **Incorporating labeled data**: The newly labeled data points are added to the labeled training set, and a new predictor is trained using all labeled data points.
-
-4. **Evaluating stopping criterion**: The model's performance is evaluated on a validation set, and the active learning process is repeated until a specified stopping criterion is met.
-
-5. **Stopping criterion**: The stopping criterion can be based on various factors, such as a fixed number of iterations, the performance of the model on the validation set, or a threshold for the amount of improvement achieved in model performance.
+ 1. Selecting a subsample of the data to be annotated by the expert
+ 2. Manually annotating the selected data sample by the expert;
+ 3. Adding the data labeled by the expert to the training set;
+ 4. Training the model on this labeled data;
+ 5. Making predictions on the remaining unlabeled data using the previously trained model;
+ 6. Selecting the most informative unlabeled data points according to the chosen query strategy;
+ 7. Repeating from step 2 to step 6 until the until a specified stopping criterion is met.
 
 By iteratively selecting the most informative unlabeled data points for labeling and incorporating them into the training set, active learning aims to achieve high model performance with less labeled data than would be required by traditional supervised learning approaches.
 
