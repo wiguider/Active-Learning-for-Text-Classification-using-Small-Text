@@ -1,7 +1,7 @@
 # Active-Learning-for-Text-Classification-using-Small-Text
 
 ## What is **Active Learning**?
-**Active learning** is an approach in machine learning that aims to improve the prediction model by iteratively selecting the most informative unlabeled data points for inclusion in the training set. 
+**Active learning** is an approach in [machine learning](https://en.wikipedia.org/wiki/Machine_learning) that aims to improve the prediction model by iteratively selecting the most informative unlabeled data points for inclusion in the training set. 
 This is done by training a predictor and using it to choose examples that will increase the chances of finding better configurations and improving the model's accuracy. The process is repeated until a specified stopping criterion is met. 
 **Active learning** is particularly useful in situations where labeled data is scarce, expensive, or requires domain expertise. 
 It solves this problem by selecting unlabeled data points that are considered informative according to a query strategy and then having them labeled by an expert. [[1](https://arxiv.org/pdf/1905.10336.pdf), [2](https://arxiv.org/pdf/2107.10314.pdf)]
