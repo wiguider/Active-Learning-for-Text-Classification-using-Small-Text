@@ -1,4 +1,4 @@
-# Active-Learning-for-Text-Classification-using-Small-Text
+# Active Learning for Text Classification in Python and Small-Text
 
 ## What is **Active Learning**?
 
