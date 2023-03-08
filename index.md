@@ -24,11 +24,11 @@ The steps to use active learning on an unlabeled dataset consist of:
 
  1. Selecting a subsample of the data to be annotated by the expert
  2. Manually annotating the selected data sample by the expert;
- 3. Adding the data labeled by the expert to the training set;
- 4. Training the model on this labeled data;
- 5. Making predictions on the remaining unlabeled data using the previously trained model;
- 6. Selecting the most informative unlabeled data points according to the chosen query strategy;
- 7. Repeating from step 2 to step 6 until the until a specified stopping criterion is met.
+ 3. Adding the data labeled by the expert to the labeled training set;
+ 4. Training the model on all the labeled data points;
+ 5. Making predictions on the remaining unlabeled data using the previously trained model; The model is used to score and rank the remaining unlabeled data points based on their informativeness.
+ 6. Selecting the most informative unlabeled data points to be annotated by the expert; These data points are chosen based on a query strategy that maximizes the expected reduction in prediction error.
+ 7. Repeating from step 2 to step 6 until the until a specified stopping criterion is met; The stopping criterion can be based on various factors, such as a fixed number of iterations, the performance of the model on the validation set, or a threshold for the amount of improvement achieved in model performance.
 
 By iteratively selecting the most informative unlabeled data points for labeling and incorporating them into the training set, active learning aims to achieve high model performance with less labeled data than would be required by traditional supervised learning approaches.
 
