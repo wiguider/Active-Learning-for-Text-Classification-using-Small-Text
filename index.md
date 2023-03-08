@@ -56,3 +56,20 @@ By iteratively selecting the most informative unlabeled data points for labeling
 ## About this project:
 
 This project consists of a notebook illustrating a simple example of how to perform **Active Learning** for text classification with [small-text](https://github.com/webis-de/small-text/tree/v1.3.0) using [sklearn](https://scikit-learn.org/) models and the [rotten tomatoes dataset](https://huggingface.co/datasets/rotten_tomatoes).
+
+### Data preparation
+
+To convert raw text data into a format usable by [small-text](https://github.com/webis-de/small-text/tree/v1.3.0), we use [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) vectorizer, provided by [sklearn](https://scikit-learn.org/), to extract features from text. Then, we use the `SklearnDataset.from_arrays()` helper function which constructs a SklearnDataset instance using the vectorizer, text, and labels.
+
+### Setting up the Active Learner
+We start by constructing a `PoolBasedActiveLearner` instance which requires a classifier factory, a query strategy, and the train dataset.
+
+To obtain a first model, we initialize the active learner by providing the true labels for 200 sentences. This corresponds to an initial labeling the real-world setting.
+
+### Active Learning Loop
+
+The main active learning loop queries the unlabeled pool and thereby decides which documents are labeled next. We then provide the labels for those documents and the active learner retrains the model. After each query, we evaluate the current model against the test set and save the result.
+
+It is worth noting that in this project we are implementing active learning as it is done in a scientific simulation. In reality, the label feedback would have been given by human annotators, and moreover, we would not be able to measure the test accuracy.
+
+
