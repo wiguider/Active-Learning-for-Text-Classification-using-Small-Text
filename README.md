@@ -10,7 +10,7 @@ It solves this problem by selecting unlabeled data points that are considered in
 ## Active Learning Process:
 
 <p align="center" >
-  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQRxCx2m6-J_ePwYcySydc9G49PtM8K8k0kmN7EeO5SzFx3B3DWkgYOOHXXdqhntWEzA6IbHiwq1gLPbf8Qy-TlelqKeA=w1234-h961" width="400">
+  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEORNch-F36ROGEBY6eFr1LhxK96tJqtFRvZUwpZ-iEdIeDBrjSp4n5CV3o5kGeDFKwILgxleVo9PpbTuBB_2SSO7LF3liw=w1920-h961" width="400">
   <br>
   (Fig 1. Steps of active learning)
 </p>
