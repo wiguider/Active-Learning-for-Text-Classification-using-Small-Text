@@ -3,7 +3,7 @@
 ## What is **Active Learning**?
 
 <p align="center" >
-  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOTx7S6Y-OrLb1bV8KBJpLqPVsG7pRV5s9EW8_6cX6Wipn6k1fbNzOtYNJSu-YfztetB8D0i26__t4o_dtwgvJAG9Qfr4g=w1920-h961" width="600">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*nzPXkKpMR-C3hvNGpdV0sw.jpeg" width="600">
   
 </p>
 
@@ -15,7 +15,7 @@ It solves this problem by selecting unlabeled data points that are considered in
 ## Active Learning Process:
 
 <p align="center" >
-  <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOTORRU-hzZE9SY3MFFEVGa-Rwv03TZVtxViDQhSFXtr9n_zZGXL4aphWkygOHPx6wizEk68SnOCUlfnQEu2SODrkM9D=w1671-h942" width="600">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*CqgDDgTO8koToRFx1eFcGA.png" width="600">
   <br>
   (Fig 1. Steps of active learning)
 </p>
